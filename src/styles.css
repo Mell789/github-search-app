@@ -1,0 +1,69 @@
+:root {
+    /* light mode */
+    --grey: #697C9A;
+    --navy-blue-light: #4B6A9B;
+    --dark-light: #2B3442;
+    --white-slight: #F6F8FF;
+    --white-light: #FEFEFE;
+    /* dark mode */
+    --white: #FFF;
+    --dark-light: #141D2F;
+    --navy-blue-dark: #1E2A47;
+
+    --blue: #0079FF;
+}
+
+* {transition: .3s;}
+.theme.bg {
+    background-color: var(--white-slight);
+}
+.theme.bg.dark {
+    background-color: var(--dark-light);
+}
+.theme.inner {
+    background-color: var(--white-light);
+}
+.theme.inner.dark {
+    background-color: var(--navy-blue-dark);
+}
+.theme.color {
+    color: var(--navy-blue-light);
+}
+.theme.color.dark {
+    color: #fff;
+}
+
+.pointer {
+    cursor: pointer;
+}
+.box-shadow {
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    border-radius: 15px;
+}
+
+/* nav */
+.devfinder {
+    color: #222731 !important;
+}
+.themetext {
+    font-family: Space Mono;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.searchBtn {
+    color: #FFF;
+    font-family: Space Mono;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    background-color: var(--blue);
+    border-radius: 10px;
+}

@@ -1,0 +1,9 @@
+
+
+@media screen and (min-width:1200px)
+{
+    div.px-md-98 {
+        padding-left: 355px !important;
+        padding-right: 355px !important;
+    }
+}

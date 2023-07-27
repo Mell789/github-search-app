@@ -1,0 +1,49 @@
+@font-face {
+    font-family: Space Mono;
+    src: url('../assets/font/SpaceMono-Regular.ttf');
+}
+
+
+/* body */
+.body {
+    color: #2B3442;
+    font-family: Space Mono;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 166.667% */
+}
+/* heading */
+.heading {
+    font-family: Space Mono;
+    line-height: normal;
+    font-style: normal;
+}
+.headingreg_sm {
+    color: #4B6A9B;
+    font-size: 13px;
+    font-weight: 400;
+}
+.headingreg {
+    color: #0079FF;
+    font-size: 16px;
+    font-weight: 400;
+}
+.headingbold_sm {
+    color: #2B3442;
+    font-size: 22px;
+    font-weight: 700;
+}
+.headingbold {
+    color: #2B3442;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 768px)
+{
+    .body.sm {
+        font-size: 13px;
+    }
+}
