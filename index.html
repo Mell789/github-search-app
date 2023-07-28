@@ -38,7 +38,7 @@
     <main>
       <div>
         <!-- search div -->
-        <div class="theme inner p-7 d-flex justify-content-between align-items-center gap-8 box-shadow user-select-none">
+        <div class="theme inner p-7 d-flex justify-content-between align-items-center gap-8 box-shadow user-select-none mb-16">
           <div class="inputdiv d-flex align-items-center ps-16 flex-grow-1">
             <img src="assets/icon-search.svg" alt="search" class="me-8">
             <input type="text" placeholder="Search GitHub username…" class="w-100 input heading headingreg_sm theme color">
@@ -46,8 +46,45 @@
           <button class="searchBtn py-12 px-18">Search</button>
         </div>
         <!-- user information section -->
-        <div class="theme inner box-shadow">
-          
+        <div class="theme inner box-shadow py-32 px-24">
+          <div class="d-flex align-items-center gap-20 mb-32">
+            <!-- img -->
+            <div>
+              <img src="assets/Oval-desktop.jpg" alt="oval" class="d-none d-md-block">
+              <img src="assets/Oval-mobile.jpg" alt="oval" class="d-md-none">
+            </div>
+            <!-- user info -->
+            <div class="d-flex flex-column">
+              <div class="d-flex flex-column">
+                <div>
+                  <h1 class="theme color heading headingbold sm">The Octocat</h1>
+                  <h3 class="theme color heading headingreg blue_">@octocat</h3>
+                </div>
+                <h3 class="theme color heading headingreg_sm lg fw-normal">Joined 25 Jan 2011</h3>
+              </div>
+              <div class="d-none d-md-block"></div>
+            </div>
+          </div>
+          <div>
+            <p class="theme color body sm mb-24">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+            </p>
+            <!-- repos-followers-following -->
+            <div class="d-flex justify-content-between py-18 px-15 theme bg rff" style="border-radius: 10px;">
+              <div class="d-flex flex-column gap-8 rff-item">
+                <h6 class="body xsm theme color m-0">Repos</h6>
+                <div class="headingbold_sm sm theme color">8</div>
+              </div>
+              <div class="d-flex flex-column gap-8 rff-item">
+                <h6 class="body xsm theme color m-0">Followers</h6>
+                <div class="headingbold_sm sm">3938</div>
+              </div>
+              <div class="d-flex flex-column gap-8 rff-item">
+                <h6 class="body xsm theme color m-0">Following</h6>
+                <div class="headingbold_sm sm">9</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>

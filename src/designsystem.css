@@ -46,5 +46,26 @@
     .body.sm {
         font-size: 13px;
     }
+    .body.xsm {
+        font-size: 11px;
+    }
+    .headingbold.sm {
+        font-size: 16px;
+    }
+    .headingbold_sm.sm {
+        font-size: 16px;
+    }
+    .headingreg.sm {
+        font-size: 13px;
+    }
+}
+@media screen and (min-width: 768px)
+{
+    .headingreg_sm.lg {
+        font-size: 15px;
+    }
+    .body.xsm {
+        font-size: 13px;
+    }
 }
 

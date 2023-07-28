@@ -13,6 +13,11 @@
     --blue: #0079FF;
 }
 
+.blue {color: var(--blue);}
+.blue_ {
+    color: var(--blue) !important;
+}
+
 ::placeholder {
     color: #4B6A9B;
 }
@@ -34,8 +39,11 @@
 .theme.color {
     color: var(--navy-blue-light);
 }
-.theme.color.dark {
+.theme.color.dark, .theme.color.heading.dark {
     color: #fff;
+}
+.theme.color.heading {
+    color: var(--dark-light);
 }
 
 .pointer {
@@ -82,4 +90,9 @@
 }
 .input:focus-visible {
     outline: none;
+}
+
+.rff-item {
+    min-width: 80px;
+    text-align: center;
 }
