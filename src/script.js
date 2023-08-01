@@ -1,4 +1,23 @@
 const themeChanger = document.querySelectorAll(".themeChanger");
+const form = document.querySelector("form");
+
+async function submit(e){
+
+    let input = document.querySelector("input.input");
+    let originalName = input.value;
+    const url = "https://api.github.com/users/" + originalName;
+    
+    let userdata;
+    async function getData(url){
+        let response = await fetch(url);
+        userdata = response.json();
+    }
+    
+
+    console.log(userdata);
+
+    e.preventDefault();
+}
 
 window.addEventListener("DOMContentLoaded",() => {
     themeChanger.forEach(
@@ -32,6 +51,6 @@ window.addEventListener("DOMContentLoaded",() => {
         }
     );
     
-    
+    form.addEventListener("submit",submit);
     
 });
