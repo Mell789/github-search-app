@@ -47,6 +47,16 @@
 .theme.color.headingbold_sm.sm {
     color: var(--dark-light);
 }
+.theme.themeHover:hover * {
+    color: #222731 !important;
+    fill: #222731 !important;
+}
+.theme.themeHover.dark:Hover * {
+    color: #90A4D4 !important;
+    fill: #90A4D4 !important;
+}
+
+
 svg {
     fill: var(--navy-blue-light);
 }
@@ -93,6 +103,10 @@ svg.dark {
     border: none;
     background-color: var(--blue);
     border-radius: 10px;
+    transition: background-color .2s;
+}
+.searchBtn:hover {
+    background-color: #60ABFF;
 }
 
 /* main */

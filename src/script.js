@@ -1,16 +1,37 @@
-const themeicon = document.querySelector(".themeicon");
+const themeChanger = document.querySelectorAll(".themeChanger");
 
 window.addEventListener("DOMContentLoaded",() => {
-    themeicon.addEventListener("click",() => {
-        let themes = document.querySelectorAll(".theme");
-        themes.forEach(
-            theme => {
-                theme.classList.toggle("dark");
-                if (theme.classList.contains("moon") || (theme.classList.contains("sun")))
-                {
-                    theme.classList.toggle("d-none");
-                }
-            }
-        );
-    });
+    themeChanger.forEach(
+        themeChanger => {
+            themeChanger.addEventListener("click",() => {
+                let themes = document.querySelectorAll(".theme");
+                themes.forEach(
+                    theme => {
+                        // toggle dark class
+                        theme.classList.toggle("dark");
+                        // toggle display of svgs
+                        if (theme.classList.contains("moon") || (theme.classList.contains("sun")))
+                        {
+                            theme.classList.toggle("d-none");
+                        }
+                        // update themetext textContent
+                        if (theme.classList.contains("themetext"))
+                        {
+                            if (theme.classList.contains("dark"))
+                            {
+                                theme.textContent = "Light";
+                            }
+                            else
+                            {
+                                theme.textContent = "Dark";
+                            }
+                        }
+                    }
+                );
+            });
+        }
+    );
+    
+    
+    
 });
