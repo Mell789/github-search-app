@@ -17,6 +17,7 @@
 .blue_ {
     color: var(--blue) !important;
 }
+.navy-blue-light {color: var(--navy-blue-light);}
 
 ::placeholder {
     color: #4B6A9B;
@@ -35,6 +36,7 @@
 }
 .theme.inner.dark {
     background-color: var(--navy-blue-dark);
+    box-shadow: none;
 }
 .theme.color {
     color: var(--navy-blue-light);
@@ -42,9 +44,20 @@
 .theme.color.dark, .theme.color.heading.dark {
     color: #fff;
 }
-.theme.color.heading {
+.theme.color.headingbold_sm.sm {
     color: var(--dark-light);
 }
+svg {
+    fill: var(--navy-blue-light);
+}
+svg.dark {
+    fill: #fff;
+}
+.notavailable {
+    fill: #697C9A !important;
+    color: #697C9A !important;
+}
+
 
 .pointer {
     cursor: pointer;
@@ -95,4 +108,8 @@
 .rff-item {
     min-width: 80px;
     text-align: center;
+}
+
+.rff-item .headingbold_sm.dark {
+    color: #fff !important;
 }
