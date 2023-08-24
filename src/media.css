@@ -19,3 +19,20 @@
         padding-right: 355px !important;
     }
 }
+
+@media screen and (min-width:1400px)
+{
+    .vh-xxl-100 {
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width:1680px)
+{
+    .mainContainer {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-bottom: 0 !important;
+        padding-top: 0 !important;
+    }
+}

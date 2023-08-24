@@ -63,7 +63,7 @@ svg {
 svg.dark {
     fill: #fff;
 }
-.notavailable {
+.notavailable, .notavailable * {
     fill: #697C9A !important;
     color: #697C9A !important;
 }
@@ -126,4 +126,15 @@ svg.dark {
 
 .rff-item .headingbold_sm.dark {
     color: #fff !important;
+}
+
+.avatar-mobile {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+.avatar-desktop {
+    width: 117px;
+    height: 117px;
+    object-fit: cover;
 }
