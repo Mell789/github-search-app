@@ -223,6 +223,6 @@ window.addEventListener("DOMContentLoaded",() => {
     
     form.addEventListener("submit",submit);
 
-    fixHeight();
+    // fixHeight();
     
 });

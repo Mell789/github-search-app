@@ -11,6 +11,13 @@
     .input {
         font-size: 18px;
     }
+    .mainContainer {
+        width: 573px;
+    }
+}
+@media screen and (min-width:1024px)
+{
+    .mainContainer {width: 700px;}
 }
 @media screen and (min-width:1200px)
 {
@@ -18,6 +25,7 @@
         padding-left: 355px !important;
         padding-right: 355px !important;
     }
+    .mainContainer {width: 730px;}
 }
 
 @media screen and (min-width:1400px)
