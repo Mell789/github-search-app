@@ -108,6 +108,8 @@ async function getData(url){
             if (data.blog == null || data.blog == "")
             {
                 blog.textContent = "Not Available";
+                blog.setAttribute("href","javascript:void(0);");
+                blog.setAttribute("target","_self");
                 let parents = document.querySelectorAll(".icon-container-blog");
                 parents.forEach(
                     parent => {
@@ -118,6 +120,9 @@ async function getData(url){
             else
             {
                 blog.textContent = data.blog;
+                let url = "https://" + data.blog;
+                blog.setAttribute("href",url);
+                blog.setAttribute("target","_blank");
                 let parents = document.querySelectorAll(".icon-container-blog");
                 parents.forEach(
                     parent => {
